@@ -222,12 +222,11 @@ extension ViewController: GMSAutocompleteResultsViewControllerDelegate {
     // Do something with the selected place.
     print("Place name: \(place.name)")
     print("Place address: \(place.formattedAddress)")
-    print("Place attributions: \(place.phoneNumber)")
     print("Place latitude: \(place.coordinate.latitude)")
     print("Place longitude: \(place.coordinate.longitude)")
     
     
-    let alert = UIAlertController(title: "Irjent !!😱😱", message: "Place name: \(place.name!).\n Place address: \(place.formattedAddress!).\n Place phoneNumber: \(place.phoneNumber!).\n Place latitude: \(place.coordinate.latitude) .\n Place longitude: \(place.coordinate.longitude) ", preferredStyle: .alert)
+    let alert = UIAlertController(title: "Irjent !!😱😱", message: "Place name: \(place.name!).\n Place address: \(place.formattedAddress!).\n  Place latitude: \(place.coordinate.latitude) .\n Place longitude: \(place.coordinate.longitude) ", preferredStyle: .alert)
     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
     }))
     
